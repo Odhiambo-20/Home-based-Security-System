@@ -1,0 +1,10 @@
+# Add all subdirectories
+add_subdirectory(core)
+add_subdirectory(biometrics)
+add_subdirectory(ai_ml)
+add_subdirectory(computer_vision)
+add_subdirectory(security)
+add_subdirectory(communication)
+add_subdirectory(hardware_interface)
+add_subdirectory(ui)
+add_subdirectory(utils)

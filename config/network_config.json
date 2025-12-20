@@ -1,0 +1,17 @@
+{
+    "mqtt": {
+        "enabled": true,
+        "broker": "mqtt.example.com",
+        "port": 8883,
+        "use_tls": true,
+        "client_id": "biometric_device_001"
+    },
+    "wifi": {
+        "ssid": "YourNetworkSSID",
+        "auto_connect": true
+    },
+    "ntp": {
+        "enabled": true,
+        "servers": ["pool.ntp.org"]
+    }
+}

@@ -1,0 +1,48 @@
+# Build directories
+build/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.dylib
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled binaries
+biometric_security
+*.exe
+
+# Models (too large for git)
+models/*.tflite
+models/*.onnx
+
+# Logs
+*.log
+logs/
+
+# Configuration (may contain secrets)
+config/*_secret.json
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Documentation build
+docs/_build/
+docs/html/
+
+# Hardware design files (large)
+hardware/**/*.bak
+hardware/**/*.lck
+
+# OS
+.DS_Store
+Thumbs.db

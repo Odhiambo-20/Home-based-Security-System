@@ -1,0 +1,31 @@
+{
+    "system": {
+        "name": "BiometricSecuritySystem",
+        "version": "1.0.0",
+        "log_level": "INFO",
+        "enable_debug": false
+    },
+    "hardware": {
+        "fingerprint_sensor": {
+            "enabled": true,
+            "spi_device": "/dev/spidev0.0",
+            "interrupt_gpio": 17
+        },
+        "camera": {
+            "enabled": true,
+            "device": "/dev/video0",
+            "resolution": "1920x1080",
+            "fps": 30
+        },
+        "display": {
+            "enabled": true,
+            "device": "/dev/fb0",
+            "resolution": "1024x600"
+        }
+    },
+    "authentication": {
+        "timeout_seconds": 30,
+        "max_attempts": 3,
+        "lockout_duration_minutes": 5
+    }
+}

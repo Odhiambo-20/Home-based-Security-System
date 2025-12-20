@@ -1,0 +1,23 @@
+{
+    "models": {
+        "fingerprint_cnn": {
+            "path": "/usr/local/share/biometric_security/models/fingerprint_cnn.tflite",
+            "input_shape": [1, 160, 160, 1],
+            "threshold": 0.85
+        },
+        "palm_recognition": {
+            "path": "/usr/local/share/biometric_security/models/palm_recognition.onnx",
+            "input_shape": [1, 224, 224, 3],
+            "threshold": 0.80
+        },
+        "liveness_detection": {
+            "path": "/usr/local/share/biometric_security/models/liveness_detection.tflite",
+            "input_shape": [1, 32, 96, 96, 3],
+            "threshold": 0.90
+        }
+    },
+    "inference": {
+        "use_gpu": true,
+        "num_threads": 4
+    }
+}
